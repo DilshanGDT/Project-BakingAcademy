@@ -6,10 +6,15 @@ interface ProductCardProps {
   description: string;
   price: string;
   imageUrl: string;
-  onOrder?: () => void;
 }
 
-export default function ProductCard({ name, description, price, imageUrl, onOrder }: ProductCardProps) {
+export default function ProductCard({ name, description, price, imageUrl }: ProductCardProps) {
+  const handleWhatsAppOrder = () => {
+    const message = `Hi! I'd like to order the ${name} - ${description}. Price: $${price}. Please let me know the availability and next steps.`;
+    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <Card className="overflow-hidden hover:shadow-xl transition-shadow">
       <img 
@@ -24,7 +29,7 @@ export default function ProductCard({ name, description, price, imageUrl, onOrde
           <span className="text-pink-primary font-bold">${price}</span>
           <Button 
             className="bg-pink-primary text-white hover:bg-pink-600 text-sm"
-            onClick={onOrder}
+            onClick={handleWhatsAppOrder}
           >
             Order Now
           </Button>

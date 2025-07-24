@@ -1,15 +1,6 @@
 import ProductCard from "@/components/product-card";
-import { useToast } from "@/hooks/use-toast";
 
 export default function Products() {
-  const { toast } = useToast();
-
-  const handleOrder = (productName: string) => {
-    toast({
-      title: "Order Inquiry",
-      description: `Thank you for your interest in ${productName}! Please contact us via WhatsApp to place your order.`,
-    });
-  };
 
   const birthdayCakes = [
     {
@@ -176,7 +167,6 @@ export default function Products() {
                 description={cake.description}
                 price={cake.price}
                 imageUrl={cake.imageUrl}
-                onOrder={() => handleOrder(cake.name)}
               />
             ))}
           </div>
@@ -193,7 +183,6 @@ export default function Products() {
                 description={cake.description}
                 price={cake.price}
                 imageUrl={cake.imageUrl}
-                onOrder={() => handleOrder(cake.name)}
               />
             ))}
           </div>
@@ -210,7 +199,6 @@ export default function Products() {
                 description={cake.description}
                 price={cake.price}
                 imageUrl={cake.imageUrl}
-                onOrder={() => handleOrder(cake.name)}
               />
             ))}
           </div>
@@ -227,7 +215,6 @@ export default function Products() {
                 description={pastry.description}
                 price={pastry.price}
                 imageUrl={pastry.imageUrl}
-                onOrder={() => handleOrder(pastry.name)}
               />
             ))}
           </div>
