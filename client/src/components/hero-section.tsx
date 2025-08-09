@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6">Welcome to Baking Bliss</h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Creating sweet memories with premium cakes, pastries, and professional baking education
+          Creating Sweet Memories with Premium Cakes & Professional Baking Education.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/products">
