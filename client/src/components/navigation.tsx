@@ -10,7 +10,7 @@ export default function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/products", label: "Products" },
-    { href: "/services", label: "Services" },
+    // { href: "/services", label: "Services" },
     { href: "/academy", label: "Academy" },
     { href: "/about", label: "About" },
   ];
@@ -49,7 +49,7 @@ export default function Navigation() {
               </Link>
             ))}
             </div>
-            <Link href="/#contact">
+            <Link href="/contact">
               <Button className="bg-pink-primary hover:bg-pink-600 text-white">
                 Contact
               </Button>
@@ -85,7 +85,7 @@ export default function Navigation() {
                   {item.label}
                 </Link>
               ))}
-              <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full mt-2 bg-pink-primary hover:bg-pink-600 text-white">
                   Contact
                 </Button>
