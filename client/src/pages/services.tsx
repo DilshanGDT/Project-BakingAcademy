@@ -96,8 +96,8 @@ export default function Services() {
         </div>
 
         {/* Additional Service Details */}
-        <div className="mt-16 grid lg:grid-cols-2 gap-12">
-          <div className="bg-gray-50 p-8 rounded-xl">
+        <div className="mt-16 grid lg:grid-cols-1">
+          {/* <div className="bg-gray-50 p-8 rounded-xl">
             <h3 className="text-2xl font-semibold text-brown-primary mb-6">Custom Order Process</h3>
             <div className="space-y-4">
               <div className="flex items-start">
@@ -129,7 +129,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="bg-gray-50 p-8 rounded-xl">
             <h3 className="text-2xl font-semibold text-brown-primary mb-6">Why Choose Baking Bliss?</h3>
@@ -167,13 +167,13 @@ export default function Services() {
         </div>
 
         {/* Pricing Information */}
-        <div className="mt-16 bg-pink-light p-8 rounded-xl text-center">
-          <h3 className="text-2xl font-semibold text-brown-primary mb-4">Get a Custom Quote</h3>
+        <div className="mt-16 p-8 rounded-xl text-center">
+          <h3 className="text-2xl font-semibold text-brown-primary mb-4">Cake Ateliar</h3>
           <p className="text-gray-700 mb-6">
             Every order is unique, and our pricing reflects the custom nature of our work. 
             Contact us for a detailed quote based on your specific requirements.
           </p>
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          {/* <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <h4 className="font-semibold text-brown-primary mb-2">Birthday Cakes</h4>
               <p className="text-pink-primary font-bold">Starting from $45</p>
@@ -186,7 +186,7 @@ export default function Services() {
               <h4 className="font-semibold text-brown-primary mb-2">Academy Courses</h4>
               <p className="text-pink-primary font-bold">Starting from $299</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
