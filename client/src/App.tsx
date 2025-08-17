@@ -11,6 +11,7 @@ import Services from "@/pages/services";
 import About from "@/pages/about";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import Contact from "./pages/contact";
 
 function Router() {
   return (
@@ -18,8 +19,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/products" component={Products} />
       <Route path="/academy" component={Academy} />
-      <Route path="/services" component={Services} />
+      {/* <Route path="/services" component={Services} /> */}
       <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );
