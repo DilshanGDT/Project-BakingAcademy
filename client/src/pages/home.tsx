@@ -4,9 +4,25 @@ import ReviewCard from "@/components/review-card";
 import { Button } from "@/components/ui/button";
 import { Award, Palette, GraduationCap } from "lucide-react";
 import { Link } from "wouter";
+import Services from "./services";
 
 export default function Home() {
   const reviews = [
+    {
+      name: "Sarah Johnson",
+      comment: "The wedding cake was absolutely stunning! Every guest complimented on both taste and design. Baking Bliss exceeded our expectations.",
+      rating: 5
+    },
+    {
+      name: "Michael Roberts", 
+      comment: "The baking classes are fantastic! I learned so much about cake decorating. The instructors are patient and very knowledgeable.",
+      rating: 5
+    },
+    {
+      name: "Lisa Parker",
+      comment: "Best birthday cake ever! My daughter was thrilled with the unicorn design. Quality ingredients and beautiful presentation.",
+      rating: 5
+    },
     {
       name: "Sarah Johnson",
       comment: "The wedding cake was absolutely stunning! Every guest complimented on both taste and design. Baking Bliss exceeded our expectations.",
@@ -26,6 +42,7 @@ export default function Home() {
 
   return (
     <div>
+      {/* Hero */}
       <HeroSection />
 
       {/* Business Overview */}
@@ -41,8 +58,9 @@ export default function Home() {
             </p>
           </div>
           
+          {/* Business Overview - Cards */}
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-pink-light rounded-xl">
+            <div className="text-center p-6 bg-pink-100 rounded-xl">
               <div className="w-16 h-16 bg-pink-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="text-white h-8 w-8" />
               </div>
@@ -62,7 +80,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center p-6 bg-pink-light rounded-xl">
+            <div className="text-center p-6 bg-pink-100 rounded-xl">
               <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <GraduationCap className="text-white h-8 w-8" />
               </div>
@@ -98,6 +116,7 @@ export default function Home() {
             <p className="text-xl text-gray-600">Read the sweet words from our satisfied customers</p>
           </div>
           
+          {/* Client Reviews - Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {reviews.map((review, index) => (
               <ReviewCard
@@ -112,7 +131,8 @@ export default function Home() {
         </div>
       </section>
 
-      <ContactSection />
+      {/* <ContactSection /> */}
+      <Services />
     </div>
   );
 }
